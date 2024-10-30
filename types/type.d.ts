@@ -53,6 +53,8 @@ declare interface Ride {
   };
 }
 
+//extends/ inherits all properties defined in TouchableOpacityProps plus adds some custom ones
+
 declare interface ButtonProps extends TouchableOpacityProps {
   title: string;
   bgVariant?: "primary" | "secondary" | "danger" | "outline" | "success";

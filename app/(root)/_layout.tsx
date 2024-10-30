@@ -1,14 +1,24 @@
-import { Tabs } from "expo-router";
+import { Stack } from "expo-router";
 
-const RootTabsLayout = () => {
+const Layout = () => {
   return (
-    <Tabs>
-      <Tabs.Screen name="home" options={{ headerShown: false }} />
-      <Tabs.Screen name="profile" options={{ headerShown: false }} />
-      <Tabs.Screen name="chat" options={{ headerShown: false }} />
-      <Tabs.Screen name="rides" options={{ headerShown: false }} />
-    </Tabs>
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="find-ride" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="confirm-ride"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="book-ride"
+        options={{
+          headerShown: false,
+        }}
+      />
+    </Stack>
   );
 };
 
-export default RootTabsLayout;
+export default Layout;
